@@ -34,7 +34,19 @@ public class BooksFromFile {
                 .forEach(System.out::println);
         
         
+        ArrayList<Human> humans = new ArrayList<>();
+        humans.add(new Human("Matti", 150000));
+        humans.add(new Human("Merja", 500));
+        humans.add(new Human("Pertti", 80));
+
+        System.out.println(humans);
         
+        Collections.sort(humans);
+
+        System.out.println("After calling collections.sort method");
+
+        
+        System.out.println(humans);
         
 
     }
